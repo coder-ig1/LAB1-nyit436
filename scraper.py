@@ -59,26 +59,3 @@ def get_all_courses():
 
 
 main()
-""" #make request to url
-page = requests.get(target)
-#print(page.status_code)
-#print(page.content)
-#parse html
-soup = BeautifulSoup(page.content, 'html.parser')
-print(soup.prettify())
-#find all divs with class view-row
-divs = soup.find("a", title="Go to last page")
-print(divs.parent)
-
-#loop through divs
-last_page = divs['href']
-print (last_page)
-#use regex to pull out the number ^[0-9]*$
-last_page_num = re.findall('\d+', last_page)
-print(last_page_num)
-#convert to int
-last_page_num = int(last_page_num[0])
-print(last_page_num)
-#define function hi which takes no input and prints hi
-def hi():
-    print("hi") """

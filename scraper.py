@@ -1,8 +1,6 @@
 #build web scraper using beautiful soup and requests
 import requests
-from requests_html import HTMLSession
 from bs4 import BeautifulSoup
-import re
 
 def main():
     get_all_bio_urls()
